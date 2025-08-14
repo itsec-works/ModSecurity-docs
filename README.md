@@ -13,7 +13,7 @@ If not ? Install them first:
 dnf install nginx
 EPEL?? Not sure if we really need it
 ```
-At the time of writing the latest release in the BaseOS repository is 1.26.3-1.el10.x86_64
+At the time of writing the latest release in the BaseOS repository is ```1.26.3-1.el10.x86_64```.
 As the purpose of this writing is not getting NGINX up and running, please make sure that part works before you continue.
 
 For actually installing modSecurity you need 2 components
@@ -53,6 +53,13 @@ So lets go and find:
 - libpcre
 - libXML2
 - libinjection
+
+# There is NO maintained version of YAJL 
+
+See the discussion at ModSecurity Github: https://github.com/owasp-modsecurity/ModSecurity/issues/3308
+
+# Stop here
+This needs to be resolved first
 
 ```
 CD into the ModSecurity directory. You will find a ```build.sh``` file there. 
